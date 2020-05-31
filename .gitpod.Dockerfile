@@ -2,7 +2,8 @@ FROM ubuntu:latest
 
 USER root
 
-RUN apt-get update \
+RUN export DEBIAN_FRONTEND=noninteractive \
+    && apt-get update \
     && apt-get install -y git curl sudo locales zip unzip \
     && curl -sL https://deb.nodesource.com/setup_14.x | bash - \
     && apt-get install -y nodejs \
