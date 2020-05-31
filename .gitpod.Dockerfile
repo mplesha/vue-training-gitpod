@@ -4,7 +4,7 @@ USER root
 
 RUN apt-get update \
     && apt-get install -y git curl sudo locales zip unzip \
-    && curl -sL https://deb.nodesource.com/setup_12.x | bash - \
+    && curl -sL https://deb.nodesource.com/setup_14.x | bash - \
     && apt-get install -y nodejs \
     && curl -sL https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add - \
     && echo 'deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main' | tee /etc/apt/sources.list.d/google-chrome.list \
