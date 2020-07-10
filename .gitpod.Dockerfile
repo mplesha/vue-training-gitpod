@@ -40,3 +40,4 @@ parse_git_branch() { \n\
 } \n\
 \n\
 PS1='\''\[\\e[01;34m\]\w \[\\e[91m\]$(parse_git_branch)\[\\e[00m\]\$ '\''\n'>> .bashrc
+
